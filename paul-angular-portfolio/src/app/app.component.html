@@ -1,0 +1,61 @@
+<header class="site-header">
+  <a href="#home" class="brand">PD</a>
+  <nav>
+    <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero section">
+  <div class="hero-copy">
+    <p class="eyebrow">Hey There! I'm</p>
+    <h1>{{ name }}</h1>
+    <h2>{{ title }}</h2>
+    <p class="lead">I design secure, scalable, cloud-native enterprise applications across financial services, insurance, healthcare, and government domains.</p>
+    <div class="actions"><a class="btn primary" href="#portfolio">View Portfolio</a><a class="btn" href="#contact">Contact Me</a></div>
+  </div>
+<div class="hero-card">
+  <img
+    class="profile-photo"
+    src="assets/profile-photo.png"
+    alt="Paul David Panthagani profile photo"
+  />
+
+  <div class="avatar">PD</div>
+
+  <p>Java • Angular • React • Spring Boot • Cloud • AI</p>
+</div>
+</section>
+
+<section id="about" class="section">
+  <p class="eyebrow">About</p>
+  <h2>Software Engineer | Full Stack Developer</h2>
+  <p class="section-text">Senior Full Stack Software Engineer with 7+ years of experience building distributed systems, REST APIs, microservices, cloud platforms, and AI-powered automation. Strong hands-on experience with Java, Spring Boot, Golang, Python, Angular, React, Kafka, Kubernetes, AWS, Azure, Terraform, and secure identity patterns using OAuth2, OIDC, JWT, Cognito, and IAM.</p>
+  <div class="stats"><div *ngFor="let stat of stats"><strong>{{ stat.value }}</strong><span>{{ stat.label }}</span></div></div>
+  <h3>Skills</h3>
+  <div class="skills"><span *ngFor="let skill of skills">{{ skill }}</span></div>
+</section>
+
+<section id="experience" class="section alt">
+  <p class="eyebrow">Professional Experience</p>
+  <h2>Enterprise Delivery Experience</h2>
+  <div class="timeline">
+    <article *ngFor="let exp of experiences" class="experience-card">
+      <div><h3>{{ exp.company }}</h3><p>{{ exp.role }} • {{ exp.location }}</p></div><span>{{ exp.period }}</span>
+      <ul><li *ngFor="let bullet of exp.bullets">{{ bullet }}</li></ul>
+    </article>
+  </div>
+</section>
+
+<section id="portfolio" class="section">
+  <p class="eyebrow">Portfolio</p>
+  <h2>Selected Projects</h2>
+  <div class="project-grid"><article *ngFor="let project of projects" class="project-card"><div class="project-icon">+</div><h3>{{ project.title }}</h3><p class="tag">{{ project.tag }}</p><p>{{ project.description }}</p></article></div>
+</section>
+
+<section id="contact" class="section contact alt">
+  <p class="eyebrow">Contact</p>
+  <h2>Let’s build something scalable.</h2>
+  <div class="contact-grid"><a href="mailto:{{ email }}">{{ email }}</a><a href="tel:+15733828757">{{ phone }}</a><a [href]="linkedin" target="_blank" rel="noopener">LinkedIn Profile</a></div>
+</section>
+
+<footer>Designed by Paul David Panthagani</footer>
