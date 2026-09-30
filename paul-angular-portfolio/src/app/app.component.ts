@@ -43,16 +43,7 @@ export class AppComponent {
       ]
     },
     {
-      company: 'CVS Health', role: 'Software Engineer', location: 'Irvine, California', period: 'Nov 2021 – Dec 2022',
-      bullets: [
-        'Led Golang microservices for insurance policy management and claims automation platforms.',
-        'Migrated legacy Java services to cloud-native microservices on Azure Kubernetes Service with PostgreSQL and Kafka.',
-        'Built Python automation scripts for policy and claims reconciliation, reducing manual processing effort by 40%.',
-        'Implemented Grafana dashboards with Prometheus and Loki for latency, throughput, health, and failure metrics.'
-      ]
-    },
-    {
-      company: 'Accenture Pvt Ltd - Markel Insurance', role: 'Software Application Developer', location: 'Hyderabad, India', period: 'May 2017 – Aug 2021',
+      company: 'Accenture Pvt Ltd - Markel Insurance', role: 'Software Application Developer', location: 'Hyderabad, India', period: 'May 2018 – Aug 2021',
       bullets: [
         'Programmed Java web applications for Markel Insurance Management and Developer API Portal, integrating Data Structures, Stream APIs, and Lambda Expressions in alignment with sound system design principless.',
         'Collaborated with cross-functional teams to architect and implement RESTful APIs with Spring Boot framework; introduced RabbitMQ for microservices communication, leading to a 30% increase in system robustness and scalability',
